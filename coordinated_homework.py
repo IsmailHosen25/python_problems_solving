@@ -200,10 +200,33 @@
 
 ### Q-13
 
-str="We used a list comprehension to iterate over the list of floating-point numbers and passed each number."
+# str="We used a list comprehension to iterate over the list of floating-point numbers and passed each number."
 
-def uppercase(str):
-     new_str=str.upper()
-     return new_str
+# def uppercase(str):
+#      new_str=str.upper()
+#      return new_str
 
-print(uppercase(str))
+# print(uppercase(str))
+
+
+
+### Q-14
+
+# student_list=[ 2110384, 2111450, 222324, 2110888, 1911058, 201222, 1931344]  # Store id in list
+
+# id=int(input())
+# def Chick_Id(student_list, id):
+#     for i in range(len(student_list)):
+#         if student_list[i] == id: 
+#             return True
+#     return False
+# result=Chick_Id(student_list, id)
+# print(f"Id validation: {result}")
+
+
+### Q-15
+
+def str():
+    result = "The answer to life the universe and everything"
+    return result
+print(str())
