@@ -53,3 +53,40 @@
 # 	print(True)
 # else:
 # 	print(False)
+
+###Q-3
+class Stack:
+    def __init__(self):
+        self.arr=[]
+    def push(self,str):
+            self.arr.append(str)
+    def print_stack(self):
+          return self.arr
+    def size(self):
+        return len(self.arr)
+    def isempty(self):
+        if(len(self.arr) == 0):
+            return True
+        else:
+            return False
+    def pop(self):
+        if self.isempty():
+            print("Stack is empty")
+        else:
+           self.arr.pop()
+    def peek(self):
+        if self.isempty():
+            print("Stack is empty")
+        else:
+            return self.arr[-1]
+lst=[7,9,4,8,14,56,8,3,2,0]
+lst_max=lst[0]
+new_stack=Stack()
+for i in range (1,len(lst)):
+    if(lst_max<lst[i]):
+        new_stack.push(lst_max)
+        lst_max=lst[i]
+    else:
+        new_stack.push(lst[i])
+new_stack.push(lst_max)
+print(new_stack.print_stack())
