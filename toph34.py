@@ -1,0 +1,6 @@
+n1,n2=map(int,input().split())
+s1=set(map(int,input().split()))
+s2=set(map(int,input().split()))
+uni=s1.union(s2)
+s_uni=sorted(uni)
+print(*s_uni)
